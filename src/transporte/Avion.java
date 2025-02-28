@@ -12,6 +12,10 @@ public final class Avion extends Vehiculo implements ConMotor {
      * hay que sobreescribir el metodo de la interfaz ConMotor.
      */
 
+     @Override
+        public void encenderMotor() {
+            System.out.println("El motor del avión está encendido.");
+        }
 
     /**
      * TODO
@@ -19,5 +23,9 @@ public final class Avion extends Vehiculo implements ConMotor {
      * el metodo describir es una implementación de la clase abstracta Vehiculo. por lo que
      * hay que sobreescribir el metodo describir de la clase abstracta.
      */
-
+    @Override
+    public void describir() {
+        System.out.println("Soy un avión que vuela a 900 km/h.");
+    }
+    
 }
