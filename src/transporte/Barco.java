@@ -3,7 +3,10 @@ package src.transporte;
 /**
  * Clase Barco, que hereda de Vehiculo y implementa ConMotor.
  */
-public final class Barco extends Vehiculo implements ConMotor {
+public class Barco extends Vehiculo implements ConMotor {
+    public Barco (int velocidadMaxima) {
+        super(velocidadMaxima);
+    }
     /**
      * Metodo encenderMotor, que imprime "El motor del barco está encendido."
      * el metodo encenderMotor es una implementación de la interfaz ConMotor. por lo que
@@ -24,7 +27,7 @@ public final class Barco extends Vehiculo implements ConMotor {
 
     @Override
     public void describir() {
-        System.out.println("Soy un barco que navega a 50 km/h.");
+        System.out.println("Soy un barco que navega a " + velocidadMaxima +  "km/h.");
     }
 
 }

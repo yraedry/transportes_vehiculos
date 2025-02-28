@@ -2,8 +2,10 @@ package src.transporte;
 /**
  * Clase Bicicleta, que hereda de Vehiculo y implementa ConMotor.
  */
-public final class Bicicleta extends Vehiculo implements SinMotor{
-
+public class Bicicleta extends Vehiculo implements SinMotor{
+    public Bicicleta (int velocidadMaxima) {
+        super(velocidadMaxima);
+    }
     /**
      * Método usarFuerzaHumana, que imprime "Usando fuerza humana para mover la bicicleta."
      * el metodo usarFuerzaHumana es una implementación de la interfaz SinMotor. por lo que
@@ -24,7 +26,7 @@ public final class Bicicleta extends Vehiculo implements SinMotor{
 
     @Override
     public void describir() {
-        System.out.println("Soy una bicicleta con una velocidad máxima de 30 km/h.");
+        System.out.println("Soy una bicicleta con una velocidad máxima de " + velocidadMaxima + " km/h.");
     }
 
 }
