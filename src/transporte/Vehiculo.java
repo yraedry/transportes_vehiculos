@@ -8,6 +8,18 @@ public abstract class Vehiculo {
     private int velocidadMaxima;
 
     /**
+     * Constructor por defecto.
+     */
+    public Vehiculo(){}
+
+    /**
+     * Constructor con parametros.
+     * @param velocidadMaxima Velocidad maxima del vehículo en km/h.
+     */
+    public Vehiculo(int velocidadMaxima){
+        this.velocidadMaxima = velocidadMaxima;
+    }
+    /**
      * Metodo necesario para el uso de la clase abstracta.
      */
     public void arrancar() {
@@ -19,4 +31,13 @@ public abstract class Vehiculo {
      * hay que sobreescribir el metodo describir de la clase abstracta.
      */
     public abstract void describir();
+
+    //getter y setter
+    public int getVelocidadMaxima() {
+        return velocidadMaxima;
+    }
+
+    public void setVelocidadMaxima(int velocidadMaxima) {
+        this.velocidadMaxima = velocidadMaxima;
+    }
 }
