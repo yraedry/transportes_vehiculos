@@ -5,7 +5,7 @@ package src.transporte;
  */
 public abstract class Vehiculo {
     //Atributos
-    private int velocidadMaxima;
+    protected int velocidadMaxima;
 
     /**
      * Constructor por defecto.
