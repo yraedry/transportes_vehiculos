@@ -27,7 +27,7 @@ public final class Avion extends Vehiculo implements ConMotor {
      */
     @Override
     public void describir() {
-        System.out.println("Soy un avión que vuela a" + velocidadMaxima + "km/h.");
+        System.out.println("Soy un avión que vuela a " + velocidadMaxima + " km/h.");
     }
     
 }
